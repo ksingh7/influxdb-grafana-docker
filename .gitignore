@@ -1,0 +1,13 @@
+Provision*
+docker-kompose.yml
+grafana-*
+influxdb-*
+notes
+temp
+#grafana/grafana.db
+grafana/plugins
+grafana/sessions
+influxdb/data
+influxdb/meta
+influxdb/db
+

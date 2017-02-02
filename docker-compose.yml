@@ -1,0 +1,24 @@
+version: '2'
+services:
+  influxdb:
+    restart: always
+    image: influxdb
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+      - "25826:25826/udp"
+    volumes:
+      - ./influxdb:/var/lib/influxdb
+      - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf
+      - ./influxdb/types.db:/usr/share/collectd/types.db:ro
+    environment:
+      - INFLUXDB_ADMIN_ENABLED=true 
+  grafana:
+    restart: always
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana:/var/lib/grafana
+    links:
+      - influxdb
