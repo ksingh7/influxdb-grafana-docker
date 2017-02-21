@@ -4,6 +4,10 @@
 - Docker Engine
 - Docker Compose
 
-## How to use
+## Deploy the service
 - Add storage devices for persistent storage for ``influxdb`` and ``grafana``.
-- `` # docker compose up -d``
+- `` # docker-compose up -d``
+
+## Setup Collectd
+- `` yum install -y collectd ``
+- Configure collectd 
