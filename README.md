@@ -25,6 +25,7 @@ echo "net.core.rmem_max=26214400" >> /etc/sysctl.conf
 echo "net.core.rmem_default=26214400" >> /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 ```
+- Influxdb should be running at http://127.0.01:8083/
 
 ## Configure Grafana 
 Execure the following commands from the node where Grafana conatiner is running
@@ -38,6 +39,7 @@ Execure the following commands from the node where Grafana conatiner is running
 ```
 curl 'http://admin:admin@127.0.0.1:3000/api/datasources' 
 ```
+- Grafana should be running at http://127.0.0.1:3000
 
 ## Setup Collectd
  `` yum install -y collectd ``
