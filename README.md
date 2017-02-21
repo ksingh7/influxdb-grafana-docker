@@ -1,4 +1,7 @@
-# influxdb-grafana-docker
+# Influxdb-Grafana-Docker-Ansible
+This repositor aims to automate deployment of monitoring stack based on Influxdb, Grafana using Docker automated by Ansible.
+
+PS: Ansible automation comming soon
 
 ## Requirements
 - Docker Engine
