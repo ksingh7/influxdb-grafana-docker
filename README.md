@@ -56,3 +56,8 @@ cp collectd/collectd.conf /etc/collectd.conf
   - Node Name
   - Host Name
   - Prefix
+  
+- Start collectd service
+```
+systemctl start collectd; systemctl enable collect
+```
