@@ -54,7 +54,7 @@ curl 'http://admin:admin@127.0.0.1:3000/api/datasources'
 cp collectd/collectd.conf /etc/collectd.conf
 ```
 
-- Edit collectd configuration file , Under <write_graphite> plugin change
+- Edit collectd configuration file , Under <write_graphite> plugin and change
   - Node Name
   - Host Name
   - Prefix
@@ -63,3 +63,6 @@ cp collectd/collectd.conf /etc/collectd.conf
 ```
 systemctl start collectd; systemctl enable collect
 ```
+## Query Influxdb for data
+- Login to influxdb web interface and run query
+`` show series from collectd ``
