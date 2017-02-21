@@ -7,6 +7,7 @@ services:
       - "8083:8083"
       - "8086:8086"
       - "25826:25826/udp"
+      - "2003:2003"
     volumes:
       - ./influxdb:/var/lib/influxdb
       - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf
