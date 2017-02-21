@@ -43,9 +43,14 @@ curl 'http://admin:admin@127.0.0.1:3000/api/datasources'
  `` yum install -y collectd ``
 - Configure collectd 
 ```
-wget https://raw.githubusercontent.com/deniszh/collectd-iostat-python/master/collectd_iostat_python.py -O /usr/lib64/collectd/collectd_iostat_python.py
-
-chmod 755 /usr/lib64/collectd/collectd_iostat_python.py
-
-wget https://raw.githubusercontent.com/deniszh/collectd-iostat-python/master/iostat_types.db -O /usr/share/collectd/iostat_types.db
+# wget https://raw.githubusercontent.com/deniszh/collectd-iostat-python/master/collectd_iostat_python.py -O /usr/lib64/collectd/collectd_iostat_python.py
+# chmod 755 /usr/lib64/collectd/collectd_iostat_python.py
+# wget https://raw.githubusercontent.com/deniszh/collectd-iostat-python/master/iostat_types.db -O /usr/share/collectd/iostat_types.db
 ```
+- Copy collectd configuration file
+```
+cp collectd/collectd.conf /etc/collectd.conf
+```
+
+- Edit collectd configuration file for the following
+ - 
